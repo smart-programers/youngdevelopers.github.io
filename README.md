@@ -1,4 +1,4 @@
 # youngdevelopers.github.io
-this  is a prototype of a our group website 
-it is my first trial website project
-still under changes and updates
+this  is a prototype of a our group website. 
+It is my first trial website project
+Still under changes and updates
