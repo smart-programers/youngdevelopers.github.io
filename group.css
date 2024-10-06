@@ -1,6 +1,7 @@
 body{
-    background-image: url("home.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("home.jpg"); */
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    
     background-size: cover;
 
 }
@@ -65,9 +66,7 @@ a:hover{
     color: blueviolet;
 
 } */
-.main{
-    margin-left: 10%;
-}
+
 
 /* .details{
     width: 30px;
@@ -87,7 +86,7 @@ a:hover{
     color: white;
     
 }
-p{
+.par1{
     border: 1px blueviolet solid;
     border-radius: 10px;
     width: 60%;
@@ -111,10 +110,12 @@ p{
     position: absolute;
     left: 50%;
     top: 50px;
+    right: 60%;
+    
     
 }
 img{
-    height: 600px;
+    height: 500px;
     width: 700px;
 }
 
@@ -143,3 +144,61 @@ img{
 /* end of index styling*/
 
 /* beggining of mission styling*/
+.our-mission{
+    color: white;
+    margin-top: 20%;
+
+    right: 5;
+}
+.heading2{
+    color: black;
+    float: left;
+    position: relative;
+    left: 700px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.goal{
+    height: 90%;
+    text-align: center;
+
+}
+
+.par2 { 
+    margin-top: 10px;
+    float: right;
+    color: black;
+   
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 30px;
+    width: auto;
+   
+    height: 200px;
+    
+
+    
+
+}
+.section{
+    background-color: white;
+
+
+}
+.our-mission{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    top: 40px;
+    
+}
+.banner2{
+    margin-top: 100px;
+    border :2px blueviolet;
+}
+
+#img-our-mission{
+    height: 500px;
+    padding-left: 80px;
+}
