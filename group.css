@@ -1,12 +1,15 @@
 body{
     background-image: url("home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 nav{
     text-align: right;
     color: blue;
     
 }
-
+/* 
 h1{
     color: blueviolet;
     text-align: center;
@@ -18,7 +21,9 @@ h1{
 }
 
 .content{
-    text-align: center;
+    position: relative;
+    align-items: center;
+    color: white;
 }
 p{
     color: white;
@@ -59,7 +64,82 @@ p{
 a:hover{
     color: blueviolet;
 
+} */
+.main{
+    margin-left: 10%;
 }
+
+/* .details{
+    width: 30px;
+    display: inline;
+} */
+.head{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: white;
+}
+.content{
+    
+    margin:10px ;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    
+}
+p{
+    border: 1px blueviolet solid;
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px 20px;
+    
+
+    
+}
+.buttons{
+    display: flex;
+    gap: 30%;
+    padding-left: 40px;
+    margin-top: 10%;
+    
+    
+
+}
+.banner{
+    padding-left: 100px;
+    padding-top: 5%;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    
+}
+img{
+    height: 600px;
+    width: 700px;
+}
+
+#btn1 button{
+    border: 1px blueviolet solid;
+    background-color: blueviolet;
+    width: 70px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}
+
+#btn2 button{
+    border: 1px blueviolet solid;
+    background-color: blueviolet;
+    width: 70px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}
+
 /* end of index styling*/
 
 /* beggining of mission styling*/
