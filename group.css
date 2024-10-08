@@ -1,7 +1,11 @@
 body{
     /* background-image: url("home.jpg"); */
     background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
     
+
+    background-repeat: no-repeat;
+
     background-size: cover;
 
 }
@@ -9,6 +13,15 @@ nav{
     text-align: right;
     color: blue;
     
+}
+
+@keyframes slides {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        left: -200px;
+    }
 }
 /* 
 h1{
@@ -201,4 +214,122 @@ img{
 #img-our-mission{
     height: 500px;
     padding-left: 80px;
+
 }
+
+}
+
+/* end of mission styling*/
+
+/* beggining of about us  styling*/
+
+.headingspace{
+    color: blueviolet;
+    margin-top: 100px;
+}
+
+.about-us{
+    color: white;
+    margin-bottom: 5%;
+}
+.heading3{
+    text-align: center;
+}
+.par3{
+    border: 2px blueviolet solid;
+    width :40%;
+    position: relative;
+    left: 30%;
+    padding-top: 40px ;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin-top: 5%;
+}
+/* end of about us  styling*/
+/* /* beggining of meet-us  styling*/ */
+.meet-us{
+    position: relative;
+    
+    
+    
+    
+}
+.dev-pics{
+    height: auto;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.heading4{
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.members{
+    position: relative;
+    height: 200px;
+    width: 70%;
+    display: flex;
+    
+    gap: 30px;
+    margin-inline: auto;
+    overflow: hidden;
+    
+
+}
+
+/* .list{
+    left: 100%;
+    position: absolute;
+    
+    width: 100px;
+    animation: slides 20s infinite linear;
+    animation-delay: calc(( 20s /var(--quantity)) * (var(--position)-1));
+
+} */
+/* gpt */
+/* .members{
+    
+    position: relative;
+    height: 200px;
+    width: 70%;
+    
+    display: flex;
+    gap: 30px;
+    margin-inline: auto;
+    overflow: hidden;
+    
+
+} */
+
+.list{
+    position: absolute;
+    width: auto;
+    left: 100%;
+    animation: slides 20s infinite linear;
+    animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1));
+    
+}
+
+/* end gpt */
+
+.dev-name{
+    width: 100%;
+    position: relative;
+    left: 10rem;
+    
+    
+    
+}
+.dev-details{
+    position: relative;
+    left: 40px;
+}
+.devs{
+    color: white;
+    width: 500px;
+    display: flex;
+    
+}
+
