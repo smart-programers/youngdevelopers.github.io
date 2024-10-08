@@ -1,7 +1,10 @@
 body{
     /* background-image: url("home.jpg"); */
+
     background-image: linear-gradient(0deg, #020024 2%, #090979 50%, #00d4ff 100%);
+
     background-repeat: no-repeat;
+
     background-size: cover;
 
 }
@@ -203,6 +206,9 @@ img{
 #img-our-mission{
     height: 500px;
     padding-left: 80px;
+
+}
+
 }
 
 /* end of mission styling*/
@@ -312,3 +318,4 @@ img{
     width: 30px;
     
 }
+
