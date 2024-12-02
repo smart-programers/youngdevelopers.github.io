@@ -1,8 +1,7 @@
 body{
     /* background-image: url("home.jpg"); */
-    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
 
-    
+    background-image: linear-gradient(0deg, #020024 2%, #090979 50%, #00d4ff 100%);
 
     background-repeat: no-repeat;
 
@@ -15,14 +14,7 @@ nav{
     
 }
 
-@keyframes slides {
-    from{
-        transform: translateX(0);
-    }
-    to {
-        left: -200px;
-    }
-}
+
 /* 
 h1{
     color: blueviolet;
@@ -225,7 +217,7 @@ img{
 
 .headingspace{
     color: blueviolet;
-    margin-top: 100px;
+    margin-top: 1000px;
 }
 
 .about-us{
@@ -246,7 +238,8 @@ img{
     margin-top: 5%;
 }
 /* end of about us  styling*/
-/* /* beggining of meet-us  styling*/ */
+
+/* /* beggining of our team  styling*/ */
 .meet-us{
     position: relative;
     
@@ -267,69 +260,62 @@ img{
 }
 
 .members{
+
+    
     position: relative;
     height: 200px;
-    width: 70%;
-    display: flex;
-    
-    gap: 30px;
+    width: 60%;
     margin-inline: auto;
-    overflow: hidden;
+    overflow: hidden;  
+    mask-image: linear-gradient(90deg, transparent, white 70%, transparent);
     
+ 
+}
+@keyframes slides {
 
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(-2900%);
+    }
+}
+/* pause effect */
+.members:hover .list{
+    animation-play-state: paused!important;
 }
 
-/* .list{
-    left: 100%;
-    position: absolute;
-    
-    width: 100px;
-    animation: slides 20s infinite linear;
-    animation-delay: calc(( 20s /var(--quantity)) * (var(--position)-1));
 
-} */
-/* gpt */
-/* .members{
-    
-    position: relative;
-    height: 200px;
-    width: 70%;
-    
-    display: flex;
-    gap: 30px;
-    margin-inline: auto;
-    overflow: hidden;
-    
-
-} */
 
 .list{
     position: absolute;
-    width: auto;
-    left: 100%;
-    animation: slides 20s infinite linear;
-    animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1));
+    width: 300px;
+    animation: slides 80s infinite linear;
+    animation-delay: calc((80s / var(--quantity)) * (var(--position) - 1) );
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    transform: translateX(400%);
     
 }
 
-/* end gpt */
 
 .dev-name{
     width: 100%;
-    position: relative;
-    left: 10rem;
-    
-    
-    
+
 }
 .dev-details{
-    position: relative;
-    left: 40px;
+    
+    margin: 0px 30px;
+    
 }
-.devs{
-    color: white;
-    width: 500px;
-    display: flex;
+.dev-link{
+    display: inline;
+    padding-left: 10px;
+}
+.icon{
+    height: 30px;
+    width: 30px;
     
 }
 
