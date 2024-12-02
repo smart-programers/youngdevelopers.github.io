@@ -1,7 +1,10 @@
 body{
     /* background-image: url("home.jpg"); */
-    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-    
+
+    background-image: linear-gradient(0deg, #020024 2%, #090979 50%, #00d4ff 100%);
+
+    background-repeat: no-repeat;
+
     background-size: cover;
 
 }
@@ -10,6 +13,8 @@ nav{
     color: blue;
     
 }
+
+
 /* 
 h1{
     color: blueviolet;
@@ -201,4 +206,116 @@ img{
 #img-our-mission{
     height: 500px;
     padding-left: 80px;
+
 }
+
+}
+
+/* end of mission styling*/
+
+/* beggining of about us  styling*/
+
+.headingspace{
+    color: blueviolet;
+    margin-top: 1000px;
+}
+
+.about-us{
+    color: white;
+    margin-bottom: 5%;
+}
+.heading3{
+    text-align: center;
+}
+.par3{
+    border: 2px blueviolet solid;
+    width :40%;
+    position: relative;
+    left: 30%;
+    padding-top: 40px ;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin-top: 5%;
+}
+/* end of about us  styling*/
+
+/* /* beggining of our team  styling*/ */
+.meet-us{
+    position: relative;
+    
+    
+    
+    
+}
+.dev-pics{
+    height: auto;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.heading4{
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.members{
+
+    
+    position: relative;
+    height: 200px;
+    width: 60%;
+    margin-inline: auto;
+    overflow: hidden;  
+    mask-image: linear-gradient(90deg, transparent, white 70%, transparent);
+    
+ 
+}
+@keyframes slides {
+
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(-2900%);
+    }
+}
+/* pause effect */
+.members:hover .list{
+    animation-play-state: paused!important;
+}
+
+
+
+.list{
+    position: absolute;
+    width: 300px;
+    animation: slides 80s infinite linear;
+    animation-delay: calc((80s / var(--quantity)) * (var(--position) - 1) );
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    transform: translateX(400%);
+    
+}
+
+
+.dev-name{
+    width: 100%;
+
+}
+.dev-details{
+    
+    margin: 0px 30px;
+    
+}
+.dev-link{
+    display: inline;
+    padding-left: 10px;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    
+}
+
